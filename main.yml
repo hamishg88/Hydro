@@ -1,0 +1,14 @@
+name: examples
+channels:
+- mullenkamp
+- conda-forge
+- defaults
+dependencies:
+- python=3.6
+- pdsql=1.2
+- gistools
+- seaborn
+- ecanallousagetools=0.1
+- hilltop-py
+- hydrolm
+- spyder
