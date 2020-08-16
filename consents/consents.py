@@ -17,7 +17,7 @@ server = 'edwprod01'
 
 crc_db = 'ConsentsReporting'
 
-allo_summ_table = 'reporting.CrcAlloSiteSumm'
+allo_summ_table = 'reporting.CrcActSiteSumm'
 
 hydro_db = 'Hydro'
 
@@ -36,8 +36,7 @@ crc_allo_csv = 'crc_allo2.csv'
 
 ########################################
 ### Get data
-
-
+test
 crc_allo1 = mssql.rd_sql(server, crc_db, allo_summ_table)
 
 crc_allo2 = crc_allo1[crc_allo1['ConsentStatus'].isin(active)]

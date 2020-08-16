@@ -20,11 +20,11 @@ crc_db = 'Hydro'
 
 wus_table = 'dbo.TSDataNumericDaily'
 
-site1= ['H37/0025']
+site1= ['M34/0662']
         
 export_dir = r'C:\Users\HamishG\OneDrive - Environment Canterbury\Documents\_Projects\git\Training\Training\WUS_export'
 
-crc_wus_csv = 'crc_wus_H37_0025.csv'
+crc_wus_csv = 'crc_wus_M34_0662.csv'
 
 ########################################
 ## Get data
@@ -38,4 +38,4 @@ crc_wus1 = mssql.rd_sql(server, crc_db, wus_table, where_in={'ExtSiteID': site1}
 ### Save data
 
 file_path = os.path.join(export_dir, crc_wus_csv)
-crc_wus2.to_csv(file_path, index=False)
+crc_wus1.to_csv(file_path, index=False)
