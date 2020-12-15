@@ -28,9 +28,7 @@ file_list = []
 
 # Loop over each file and put it in an organised DataFrame structure splitting file name
 
-i=0
 for f in all_files:
-    i+=1
     fname = os.path.basename(f)
     f_split = fname.split('_')
     h = f_split[2].split('.')[0]
@@ -65,7 +63,6 @@ flist.drop(['Date', 'diff', 0, 2, 'DateTime_out'],axis=1,inplace=True)
 # Copy the files from the raw directory to the result directory
 for index, value in flist.iterrows():
     shutil.copy(os.path.join(rawdir, value['fname']), os.path.join(resultdir, value['fname']))
-    print('Processed %s of %s images' %(i, totalFiles))
 
 ### Export function for validation
 # export_dir = r'C:\Temp\Hurunui Hapua photo archive'
