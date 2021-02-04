@@ -20,11 +20,11 @@ crc_db = 'Hydro'
 
 wus_table = 'dbo.TSDataNumericDaily'
 
-site1= ['M34/0662']
+site1= ['I40/0638']
         
-export_dir = r'C:\Users\HamishG\OneDrive - Environment Canterbury\Documents\_Projects\git\Training\Training\WUS_export'
+export_dir = r'C:\Users\HamishG\OneDrive - Environment Canterbury\Documents\_Projects\git\Hydro\WUS_export'
 
-crc_wus_csv = 'crc_wus_M34_0662.csv'
+crc_wus_csv = 'crc_wus_i40_0638.csv'
 
 ########################################
 ## Get data
